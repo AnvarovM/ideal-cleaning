@@ -1,3 +1,53 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --color-text-main: #4ba0e8;
+    --color-text-secondary: #63c176;
+    --color-text-base: #252525;
+    --color-text-muted: #3d4c58;
+    --color-text-white: #ffffff;
+    --color-text-dark-bg: #22282c;
+  }
+}
+
+@layer components {
+  .nav {
+    @apply flex justify-between items-center bg-skin-white px-8 md:px-20 lg:px-32 py-3 lg:py-4 shadow-lg;
+  }
+
+  .carousel--image {
+    @apply w-0 h-0 object-cover hidden lg:h-[95vh] lg:w-full;
+  }
+
+  .carousel--image-sm {
+    @apply w-full h-[95vh] object-cover block lg:w-0 lg:h-0;
+  }
+
+  .carousel--content-div {
+    @apply absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center text-skin-white;
+  }
+
+  .carousel--content-h1 {
+    @apply text-xl sm:text-3xl lg:text-5xl whitespace-nowrap font-medium uppercase tracking-wider;
+  }
+
+  .carousel--content-btn {
+    @apply px-4 py-2 lg:py-3 lg:px-6 mt-8 border rounded-full hover:text-skin-main transition duration-300 text-base lg:text-xl font-medium hover:bg-skin-white opacity-80 transform hover:scale-105;
+  }
+
+  .main--btn {
+    @apply px-4 py-2 lg:py-3 lg:px-8 mt-16 border border-skin-muted text-skin-muted bg-transparent lg:bg-transparent rounded-full  transition duration-300 lg:text-xl font-medium transform hover:scale-105;
+  }
+
+  .top {
+    @apply fixed bottom-8 right-8 sm:right-12 text-white;
+  }
+
+  .top.top-hidden {
+    @apply hidden;
+  }
+
+}

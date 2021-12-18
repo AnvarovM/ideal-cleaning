@@ -1,0 +1,88 @@
+/* scroll style */
+html {
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  overflow-x: hidden;
+}
+/* ::-webkit-scrollbar { 
+    width: 0 !important;
+    display: none; 
+} */
+
+.bar-of-progress::after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: 0;
+  width: 100px;
+  height: 100%;
+  box-shadow: 0 0 10px currentColor, 0 0 5px currentColor;
+  transform: rotate(3deg) translate(0, -4px);
+}
+
+navbar ul li a::after {
+  content: "";
+  position: absolute;
+  background-color: #4ba0e8;
+  height: 3px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+navbar ul li a:hover::after {
+  width: 100%;
+}
+
+.slick-prev {
+  left: 10% !important;
+  z-index: 1;
+}
+.slick-next {
+  right: 10% !important;
+  z-index: 1;
+}
+.slick-prev:before,
+.slick-next:before {
+  font-family: none !important;
+  font-size: 55px !important;
+}
+
+.slick-next:before {
+  content: "›" !important;
+  font-size: 80px !important;
+}
+
+.slick-prev:before {
+  content: "‹" !important;
+  font-size: 80px !important;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: white;
+  top: 35%;
+  border-radius: 35%;
+  animation: spin 4.5s ease-in-out infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: translateY(0) rotate(0deg);
+  }
+  100% {
+    transform: translateY(-100%) rotate(500deg);
+  }
+}

@@ -4,19 +4,28 @@ module.exports = {
     "./src/pages/**/*.{js,ts,jsx,tsx}",
     "./src/components/**/*.{js,ts,jsx,tsx}",
   ],
-  darkMode: false, // or 'media' or 'class'
+  darkMode: false,
   theme: {
     extend: {
       colors: {
-        amazon_blue: {
-          light: "#232F3E",
-          DEFAULT: "#131921",
+        skin: {
+          main: "var(--color-text-main)",
+          secondary: "var(--color-text-secondary)",
+          base: "var(--color-text-base)",
+          muted: "var(--color-text-muted)",
+          white: "var(--color-text-white)",
         },
       },
+    },
+    container: {
+      center: true,
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [require("@tailwindcss/line-clamp")],
+  plugins: [
+    require("@tailwindcss/line-clamp"),
+    require("tailwind-scrollbar-hide"),
+  ],
 };
