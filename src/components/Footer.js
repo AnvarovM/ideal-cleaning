@@ -12,43 +12,43 @@ const Footer = () => {
     const [searchInput, setSearchInput] = React.useState("")
     console.log(setSearchInput);
     return (
-        <footer className="bg-[#e5e7eb] py-5">
+        <footer className="bg-[#e5e7eb] dark:bg-skin-dark_main_bg py-5">
             <div className="max-w-6xl mx-auto px-10 lg:px-0">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                    <div>
-                    <h2 className="py-6 text-xl font-medium text-skin-base uppercase">Aloqaga Chiqish</h2>
+                    <h2 className="py-6 text-xl font-medium text-skin-base dark:text-skin-dark_text_muted uppercase">Aloqaga Chiqish</h2>
                      <div className="space-y-2">
-                            <p className="flex text-skin-muted text-sm"><LocationMarkerIcon className="h-5 text-skin-muted pr-2" /> 123 Street, New York, USA </p>
-                            <p className="flex text-skin-muted text-sm"><PhoneIcon className="h-5 text-skin-muted pr-2" /> +012 345 67890 </p>
-                            <p className="flex text-skin-muted text-sm"><ChatIcon className="h-5 text-skin-muted pr-2" /> info@example.com </p>
+                            <p className="footer-link"><LocationMarkerIcon className="h-5 text-skin-muted pr-2" /> 123 Street, New York, USA </p>
+                            <p className="footer-link"><PhoneIcon className="h-5 text-skin-muted pr-2" /> +012 345 67890 </p>
+                            <p className="footer-link"><ChatIcon className="h-5 text-skin-muted pr-2" /> info@example.com </p>
                       </div>
                    </div>
                    <div>
-                    <h2 className="py-6 text-xl font-medium text-skin-base uppercase">Foydali havolalar</h2>
+                    <h2 className="py-6 text-xl font-medium text-skin-base dark:text-skin-dark_text_muted uppercase">Foydali havolalar</h2>
                      <div className="space-y-2">
-                            <p onClick={() => router.push('/about')} className="flex cursor-pointer text-skin-muted text-sm">Biz Haqimizda</p>
-                            <p onClick={() => router.push('/services')} className="flex cursor-pointer text-skin-muted text-sm">Hizmatlar</p>
-                            <p onClick={() => router.push('/projects')} className="flex cursor-pointer text-skin-muted text-sm">Proyektlar</p>
-                            <p onClick={() => router.push('/faqs')} className="flex cursor-pointer text-skin-muted text-sm">Savollar</p>
-                            <p onClick={() => router.push('/contact')} className="flex cursor-pointer text-skin-muted text-sm">Aloqa</p>
+                            <p onClick={() => router.push('/about')} className="footer-link">Biz Haqimizda</p>
+                            <p onClick={() => router.push('/services')} className="footer-link">Hizmatlar</p>
+                            <p onClick={() => router.push('/projects')} className="footer-link">Proyektlar</p>
+                            <p onClick={() => router.push('/faqs')} className="footer-link">Savollar</p>
+                            <p onClick={() => router.push('/contact')} className="footer-link">Aloqa</p>
                       </div>
                    </div>
                    <div>
-                    <h2 className="py-6 text-xl font-medium text-skin-base uppercase">Hizmatlarimiz</h2>
+                    <h2 className="py-6 text-xl font-medium text-skin-base dark:text-skin-dark_text_muted uppercase">Hizmatlarimiz</h2>
                      <div className="space-y-2">
-                            <p className="flex cursor-pointer text-skin-muted text-sm">Nimadir qilish</p>
-                            <p className="flex cursor-pointer text-skin-muted text-sm">Nimadir yuvish</p>
-                            <p className="flex cursor-pointer text-skin-muted text-sm">Nimadir tozalash</p>
-                            <p className="flex cursor-pointer text-skin-muted text-sm">Yana Nimadir</p>
+                            <p className="footer-link">Nimadir qilish</p>
+                            <p className="footer-link">Nimadir yuvish</p>
+                            <p className="footer-link">Nimadir tozalash</p>
+                            <p className="footer-link">Yana Nimadir</p>
                       </div>
                    </div>
                    <div>
-                    <h2 className="py-6 text-xl font-medium text-skin-base uppercase">Hoziroq yozing!</h2>
+                    <h2 className="py-6 text-xl font-medium text-skin-base dark:text-skin-dark_text_muted uppercase">Hoziroq yozing!</h2>
                      <div className="space-y-2">
-                            <p className="flex text-skin-muted text-sm">Biz tabiiy va ekologik toza tozalash vositalaridan foydalanamiz va mijozlar ehtiyojini qondirish kafolatiga egamiz.</p>
+                            <p className="footer-link">Biz tabiiy va ekologik toza tozalash vositalaridan foydalanamiz va mijozlar ehtiyojini qondirish kafolatiga egamiz.</p>
                             <div className="p-2 rounded-md bg-gray-50 flex w-72">
                                 <input value={searchInput} onChange={(e) => setSearchInput(e.target.value)} className="outline-none bg-transparent " type="text" placeholder="Emailingizni kiriting..." />
-                                <button className="text-sm rounded-md text-skin-base border bg-gray-300 p-2 focus:border-none" type="button">Yuborish</button>
+                                <button className="text-sm rounded-md text-skin-base dark:text-skin-dark_text border bg-gray-300 dark:bg-skin-dark_main_bg p-2 focus:border-none" type="button">Yuborish</button>
                             </div>
                             {searchInput && (
                                 <div>
@@ -62,7 +62,7 @@ const Footer = () => {
                 <div className="border-t mt-4 pt-4 border-skin-base text-center">
                     <p> 
                         <Link href="https://teamit.uz">
-                        <span className="text-skin-base font-semibold animate-pulse cursor-pointer pr-1">TeamIt coders,</span>
+                        <span className="text-skin-base dark:text-skin-dark_text_muted font-semibold animate-pulse cursor-pointer pr-1">TeamIt coders,</span>
                         </Link>
                         2021 © Barcha huquqlar himoyalangan.</p>
                 </div>

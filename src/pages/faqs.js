@@ -21,7 +21,7 @@ export default function Home() {
   const [toggle, setToggle] = useState(0);
 
   return (
-    <div>
+    <div className="dark:bg-skin-dark_secondary_bg">
       <Head>
         <title>Ideal Cleaning | Projects</title>
       </Head>
@@ -30,24 +30,24 @@ export default function Home() {
       <Navbar />
 
       {/* breadcrumb */}
-      <header className="flex items-center px-8 md:px-20 lg:px-32 py-5 font-medium bg-[#f3f4f6] space-x-4">
-        <h5
-          onClick={() => router.push("/")}
-          className="text-skin-main cursor-pointer"
-        >
-          Asosiy Sahifa
-        </h5>
-        <span className="text-xl">›</span>
-        <p className="text-skin-muted">Savollar</p>
+      <header className="flex items-center px-8 md:px-20 lg:px-32 py-5 font-medium dark:shadow-md bg-[#f3f4f6] dark:bg-skin-dark_secondary_bg space-x-4">
+          <h5
+            onClick={() => router.push("/")}
+            className="text-skin-main cursor-pointer"
+          >
+            Asosiy Sahifa
+          </h5>
+          <span className="text-xl">›</span>
+          <p className="text-skin-muted dark:text-skin-dark_text_muted">Savollar</p>
       </header>
 
       <main className="max-w-7xl mx-auto">
         {/* Ko'p beriladigan savollar */}
         <div className="text-center">
-          <h1 className="text-2xl md:text-4xl py-5 md:py-8 text-skin-base font-semibold">
+          <h1 className="text-2xl md:text-4xl py-5 md:py-8 text-skin-base dark:text-skin-dark_text_muted font-semibold">
             Ko'p Beriladigan Savollar
           </h1>
-          <p className="text-xs md:text-sm font-medium text-skin-muted">
+          <p className="text-xs md:text-sm font-medium text-skin-muted dark:text-skin-dark_text">
             Sizning xodimlaringiz, mijozlaringiz va mehmonlaringiz uchun toza va
             sog'lom muhitni ta'minlash uchun ko'p yillik tajribamiz, <br />{" "}
             malakali xodimlarimiz va ilg'or protseduralarimizdan foydalanaylik.{" "}
@@ -57,11 +57,11 @@ export default function Home() {
 
         {/* Accordion */}
         <section className="py-10 px-4 lg:px-0">
-          <p className="text-skin-base text-xl lg:text-2xl font-semibold py-4">Umumiy Savollar</p>
+          <p className="text-skin-base dark:text-skin-dark_text_muted text-xl lg:text-2xl font-semibold py-4">Umumiy Savollar</p>
          {generalQuestion.map(({question, answer})=> (
            <Accordion question={question} answer={answer} />
          ))}
-         <p className="text-skin-base text-xl lg:text-2xl font-semibold py-4">Ish Bo'yicha Savollar</p>
+         <p className="text-skin-base dark:text-skin-dark_text_muted text-xl lg:text-2xl font-semibold py-4">Ish Bo'yicha Savollar</p>
          {cleaningQuestionsData.map(({question, answer})=> (
            <Accordion question={question} answer={answer} />
          ))}

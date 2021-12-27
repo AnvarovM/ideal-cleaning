@@ -2,6 +2,7 @@ import Head from "next/head";
 import { Provider } from "react-redux";
 import ProgressBar from "@badrap/bar-of-progress";
 import { Provider as AuthProvider } from "next-auth/client";
+import { ThemeProvider } from "next-themes";
 import Router from "next/router";
 import { store } from "../app/store";
 import "../styles/globals.css";
@@ -31,11 +32,13 @@ const MyApp = ({ Component, pageProps }) => {
           rel="stylesheet"
         />
       </Head>
-      <AuthProvider session={pageProps.session}>
-        <Provider store={store}>
-          <Component {...pageProps} />
-        </Provider>
-      </AuthProvider>
+      <ThemeProvider enableSystem={true} attribute="class">
+        <AuthProvider session={pageProps.session}>
+          <Provider store={store}>
+            <Component {...pageProps} />
+          </Provider>
+        </AuthProvider>
+      </ThemeProvider>
     </div>
   );
 };

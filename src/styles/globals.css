@@ -5,17 +5,19 @@
 @layer base {
   :root {
     --color-text-main: #4ba0e8;
-    --color-text-secondary: #63c176;
     --color-text-base: #252525;
     --color-text-muted: #3d4c58;
     --color-text-white: #ffffff;
-    --color-text-dark-bg: #22282c;
+    --dark-main-bg: #1a2039;
+    --dark-secondary-bg: #252846;
+    --dark-text-color: #efefef;
+    --dark-text-muted: #9c9c9c;
   }
 }
 
 @layer components {
   .nav {
-    @apply flex justify-between items-center bg-skin-white px-8 md:px-20 lg:px-32 py-3 lg:py-4 shadow-lg;
+    @apply flex justify-between items-center bg-skin-white px-8 md:px-20 lg:px-32 py-3 lg:py-4 shadow-lg dark:bg-skin-dark_main_bg;
   }
 
   .carousel--image {
@@ -38,8 +40,12 @@
     @apply px-4 py-2 lg:py-3 lg:px-6 mt-8 border rounded-full hover:text-skin-main transition duration-300 text-base lg:text-xl font-medium hover:bg-skin-white opacity-80 transform hover:scale-105;
   }
 
+  .carousel-bg-opacity {
+    @apply absolute top-0 bottom-0 left-0 right-0 opacity-0 dark:bg-black dark:bg-opacity-20
+  }
+
   .main--btn {
-    @apply px-4 py-2 lg:py-3 lg:px-8 mt-16 border border-skin-muted text-skin-muted bg-transparent lg:bg-transparent rounded-full  transition duration-300 lg:text-xl font-medium transform hover:scale-105;
+    @apply px-4 py-2 lg:py-3 lg:px-8 mt-16 border border-skin-muted dark:border-skin-dark_text text-skin-muted dark:text-skin-dark_text bg-transparent lg:bg-transparent rounded-full transition duration-300 lg:text-xl font-medium transform hover:scale-105;
   }
 
   .top {
@@ -48,6 +54,50 @@
 
   .top.top-hidden {
     @apply hidden;
+  }
+
+  .services-card {
+    @apply py-6 px-8 border dark:bg-skin-dark_main_bg dark:border-none whitespace-nowrap shadow-xl transform hover:scale-105 transition duration-300 cursor-pointer hover:shadow-2xl rounded-md;
+  }
+
+  .services-card-icon {
+    @apply text-6xl mx-auto text-skin-main my-4 
+  }
+
+  .reason-p {
+    @apply flex py-3 text-skin-base dark:text-skin-dark_text_muted font-semibold
+  }
+
+  .price-card {
+    @apply text-center shadow-xl hover:shadow-2xl rounded-xl transform hover:scale-105 transition duration-500 cursor-pointer border
+  }
+
+  .price-card-price {
+    @apply py-5 text-3xl md:text-4xl text-skin-main font-bold bg-gray-100  group-hover:bg-gray-200
+  }
+
+  .price-card-price-type {
+    @apply text-skin-muted font-semibold text-2xl py-5 dark:text-skin-dark_text_muted
+  }
+
+  .price-card-services-list {
+    @apply text-skin-muted font-medium py-4 border-b dark:text-skin-dark_text_muted
+  }
+
+  .organic-items-p {
+    @apply flex py-5 text-skin-base text-base dark:text-skin-dark_text_muted lg:text-xl items-center font-semibold
+  }
+
+  .services-card {
+    @apply flex flex-col justify-center items-center text-center space-y-2 dark:bg-skin-dark_main_bg
+  }
+
+  .services-img {
+    @apply rounded-full w-32 h-32 md:w-40 md:h-40 cursor-pointer object-cover transform transition duration-300 hover:scale-105
+  }
+
+  .footer-link {
+    @apply flex text-skin-muted dark:text-skin-dark_text text-sm cursor-pointer hover:underline
   }
 
 }

@@ -25,13 +25,14 @@ export default function Home() {
     <div className="">
       <Head>
         <title>Ideal Cleaning | Home</title>
+        <link rel="shortcut icon" href="/static/img/logo.png" />
       </Head>
 
 
         {loading ? (
           <HomeLoading />
         ) : (
-          <div>
+          <div className="dark:bg-skin-dark_secondary_bg">
           <Navbar />
           <Header />
           <HomePage />

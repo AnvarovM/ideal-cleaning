@@ -39,6 +39,10 @@ navbar ul li a::after {
   transition: 0.3s;
 }
 
+navbar ul li a::after .dark {
+  background-color: #fff;
+}
+
 navbar ul li a:hover::after {
   width: 100%;
 }

@@ -31,11 +31,11 @@ const HomePage = () => {
       {/* services list*********/}
       <section className="max-w-6xl mx-auto py-10 md:py-16 px-8 lg:px-0">
         <div className="text-center">
-          <h1 className="text-2xl md:text-4xl py-5 md:py-8 whitespace-nowrap text-skin-base font-semibold">
+          <h1 className="text-2xl md:text-4xl py-5 md:py-8 whitespace-nowrap text-skin-base dark:text-skin-dark_text_muted font-semibold">
             Bizning <span className="hidden md:inline">Tozalash</span>{" "}
             Hizmatlarimiz.
           </h1>
-          <p className="text-xs md:text-sm font-medium text-skin-muted">
+          <p className="text-xs md:text-sm font-medium text-skin-muted dark:text-skin-dark_text">
             Sizning xodimlaringiz, mijozlaringiz va mehmonlaringiz uchun toza va
             sog'lom muhitni ta'minlash uchun ko'p yillik tajribamiz, <br />{" "}
             malakali xodimlarimiz va ilg'or protseduralarimizdan foydalanaylik.{" "}
@@ -43,25 +43,25 @@ const HomePage = () => {
         </div>
 
         <div className="py-10 overflow-x-auto flex space-x-5 scrollbar-hide">
-          <div className="py-10 px-8 border whitespace-nowrap shadow-xl transform hover:scale-105 transition duration-300 cursor-pointer hover:shadow-2xl rounded-md group">
+          <div className="services-card">
             <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-100" />
-            <h2 className="text-xl font-semibold text-skin-base text-center">
+            <h2 className="text-xl font-semibold text-skin-base dark:text-skin-dark_text_muted text-center">
               Oyna Tozalash
             </h2>
             <div className="pt-5">
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">Carpet cleaning</p>
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">Carpet cleaning</p>
               </div>
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">
                   Carpet cleaning fast
                 </p>
               </div>
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">Window cleaning</p>
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">Window cleaning</p>
               </div>
             </div>
             <p
@@ -71,25 +71,25 @@ const HomePage = () => {
               Read More
             </p>
           </div>
-          <div className="py-10 px-8 border whitespace-nowrap shadow-xl transform hover:scale-105 transition duration-300 cursor-pointer hover:shadow-2xl rounded-md group">
-            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-200" />
-            <h2 className="text-xl font-semibold text-skin-base text-center">
+          <div className="services-card">
+            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-100" />
+            <h2 className="text-xl font-semibold text-skin-base dark:text-skin-dark_text_muted text-center">
               Oyna Tozalash
             </h2>
             <div className="pt-5">
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">Carpet cleaning</p>
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">Carpet cleaning</p>
               </div>
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">
                   Carpet cleaning fast
                 </p>
               </div>
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">Window cleaning</p>
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">Window cleaning</p>
               </div>
             </div>
             <p
@@ -99,25 +99,25 @@ const HomePage = () => {
               Read More
             </p>
           </div>
-          <div className="py-10 px-8 border whitespace-nowrap shadow-xl transform hover:scale-105 transition duration-300 cursor-pointer hover:shadow-2xl rounded-md group">
-            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform  group-hover:scale-105 transition duration-200" />
-            <h2 className="text-xl font-semibold text-skin-base text-center">
+          <div className="services-card">
+            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-100" />
+            <h2 className="text-xl font-semibold text-skin-base dark:text-skin-dark_text_muted text-center">
               Oyna Tozalash
             </h2>
             <div className="pt-5">
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">Carpet cleaning</p>
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">Carpet cleaning</p>
               </div>
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">
                   Carpet cleaning fast
                 </p>
               </div>
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">Window cleaning</p>
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">Window cleaning</p>
               </div>
             </div>
             <p
@@ -127,25 +127,25 @@ const HomePage = () => {
               Read More
             </p>
           </div>
-          <div className="py-10 px-8 border whitespace-nowrap shadow-xl transform hover:scale-105 transition duration-300 cursor-pointer hover:shadow-2xl rounded-md group">
-            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform  group-hover:scale-105 transition duration-200" />
-            <h2 className="text-xl font-semibold text-skin-base text-center">
+          <div className="services-card">
+            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-100" />
+            <h2 className="text-xl font-semibold text-skin-base dark:text-skin-dark_text_muted text-center">
               Oyna Tozalash
             </h2>
             <div className="pt-5">
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">Carpet cleaning</p>
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">Carpet cleaning</p>
               </div>
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">
                   Carpet cleaning fast
                 </p>
               </div>
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">Window cleaning</p>
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">Window cleaning</p>
               </div>
             </div>
             <p
@@ -155,25 +155,25 @@ const HomePage = () => {
               Read More
             </p>
           </div>
-          <div className="py-10 px-8 border whitespace-nowrap shadow-xl transform hover:scale-105 transition duration-300 cursor-pointer hover:shadow-2xl rounded-md group">
-            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform  group-hover:scale-105 transition duration-200" />
-            <h2 className="text-xl font-semibold text-skin-base text-center">
+          <div className="services-card">
+            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-100" />
+            <h2 className="text-xl font-semibold text-skin-base dark:text-skin-dark_text_muted text-center">
               Oyna Tozalash
             </h2>
             <div className="pt-5">
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">Carpet cleaning</p>
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">Carpet cleaning</p>
               </div>
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">
                   Carpet cleaning fast
                 </p>
               </div>
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">Window cleaning</p>
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">Window cleaning</p>
               </div>
             </div>
             <p
@@ -183,25 +183,25 @@ const HomePage = () => {
               Read More
             </p>
           </div>
-          <div className="py-10 px-8 border whitespace-nowrap shadow-xl transform hover:scale-105 transition duration-300 cursor-pointer hover:shadow-2xl rounded-md group">
-            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform  group-hover:scale-105 transition duration-200" />
-            <h2 className="text-xl font-semibold text-skin-base text-center">
+          <div className="services-card">
+            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-100" />
+            <h2 className="text-xl font-semibold text-skin-base dark:text-skin-dark_text_muted text-center">
               Oyna Tozalash
             </h2>
             <div className="pt-5">
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">Carpet cleaning</p>
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">Carpet cleaning</p>
               </div>
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">
                   Carpet cleaning fast
                 </p>
               </div>
               <div className="flex items-center justify-center">
                 <span className="text-skin-main px-2 text-lg">✔</span>
-                <p className="font-medium text-skin-muted">Window cleaning</p>
+                <p className="font-medium text-skin-muted dark:text-skin-dark_text_muted">Window cleaning</p>
               </div>
             </div>
             <p
@@ -225,7 +225,7 @@ const HomePage = () => {
         ></Parallax>
         <div className="static lg:absolute lg:top-0 lg:bottom-0 lg:left-0 lg:right-0 grid grid-cols-1 lg:grid-cols-2 items-center space-x-0 md:space-x-4 py-8 lg:py-16 max-w-6xl mx-auto px-8 lg:px-0">
           <div className="space-y-3">
-            <h3 className="text-2xl lg:text-4xl font-medium text-skin-main lg:text-skin-white">
+            <h3 className="text-2xl lg:text-4xl font-medium text-skin-main dark:text-skin-dark_text lg:text-skin-white">
               <span className="text-3xl lg:text-5xl font-semibold"> 10 </span>{" "}
               Yillik Tajriba{" "}
             </h3>
@@ -262,10 +262,10 @@ const HomePage = () => {
       <section className="max-w-7xl mx-auto">
         {/* content top */}
         <div className="text-center">
-          <h1 className="text-2xl md:text-4xl py-5 md:py-8 whitespace-nowrap text-skin-base font-semibold">
+          <h1 className="text-2xl md:text-4xl py-5 md:py-8 whitespace-nowrap text-skin-base dark:text-skin-dark_text_muted font-semibold">
             Bizni Tanlashingizga Sabablar
           </h1>
-          <p className="text-xs md:text-sm font-medium text-skin-muted">
+          <p className="text-xs md:text-sm font-medium text-skin-muted dark:text-skin-dark_text">
             Sizning xodimlaringiz, mijozlaringiz va mehmonlaringiz uchun toza va
             sog'lom muhitni ta'minlash uchun ko'p yillik tajribamiz, <br />{" "}
             malakali xodimlarimiz va ilg'or protseduralarimizdan foydalanaylik.{" "}
@@ -294,39 +294,39 @@ const HomePage = () => {
               />
             </div>
           </div>
+          
           {/* right reason */}
           <div>
-            {/* <h4 className="text-2xl font-medium text-skin-base">Biz bunga bir nechta sabab keltira olamiz!</h4> */}
-            <p className="py-3 text-skin-base font-semibold flex">
+            <p className="reason-p">
               {" "}
               <span className="text-green-500 mr-2">
                 <ImLeaf />
               </span>{" "}
               Yuqor darajali hizmat!{" "}
             </p>
-            <p className="font-medium text-sm text-skin-muted">
+            <p className="font-medium text-sm text-skin-muted  dark:text-skin-dark_text">
               Biz mijozlarimizni qondirish va ularning obligatsiya pullarini
               qaytarish bo'yicha muvaffaqiyatli tajribaga egamiz.{" "}
             </p>
-            <p className="py-3 text-skin-base font-semibold flex">
+            <p className="reason-p">
               {" "}
               <span className="text-green-500 mr-2">
                 <ImLeaf />
               </span>{" "}
               Yuqor darajali hizmat!{" "}
             </p>
-            <p className="font-medium text-sm text-skin-muted">
+            <p className="font-medium text-sm text-skin-muted  dark:text-skin-dark_text">
               Biz mijozlarimizni qondirish va ularning obligatsiya pullarini
               qaytarish bo'yicha muvaffaqiyatli tajribaga egamiz.{" "}
             </p>
-            <p className="py-3 text-skin-base font-semibold flex">
+            <p className="reason-p">
               {" "}
               <span className="text-green-500 mr-2">
                 <ImLeaf />
               </span>{" "}
               Yuqor darajali hizmat!{" "}
             </p>
-            <p className="font-medium text-sm text-skin-muted">
+            <p className="font-medium text-sm text-skin-muted  dark:text-skin-dark_text">
               Biz mijozlarimizni qondirish va ularning obligatsiya pullarini
               qaytarish bo'yicha muvaffaqiyatli tajribaga egamiz.{" "}
             </p>
@@ -383,42 +383,42 @@ const HomePage = () => {
       {/* about price */}
       <section className="max-w-7xl mx-auto">
         <div className="text-center pb-8">
-          <h1 className="text-2xl md:text-4xl py-5 md:py-8 whitespace-nowrap text-skin-base font-semibold">
+          <h1 className="text-2xl md:text-4xl py-5 md:py-8 whitespace-nowrap text-skin-base dark:text-skin-dark_text_muted font-semibold">
             Ma'qul Narxni Tanlang!
           </h1>
-          <p className="text-xs md:text-sm font-medium text-skin-muted">
+          <p className="text-xs md:text-sm font-medium text-skin-muted dark:text-skin-dark_text">
             Sizning xodimlaringiz, mijozlaringiz va mehmonlaringiz uchun toza va
             sog'lom muhitni ta'minlash uchun ko'p yillik tajribamiz, <br />{" "}
             malakali xodimlarimiz va ilg'or protseduralarimizdan foydalanaylik.{" "}
           </p>
         </div>
         <div className="grid gap-8 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 md:py-10 px-8 lg:px-0">
-          <div className="text-center shadow-xl hover:shadow-2xl rounded-xl transform hover:scale-105 transition duration-500 group cursor-pointer">
-            <h3 className="text-skin-muted font-semibold text-2xl py-5">
+          <div className="price-card">
+            <h3 className="price-card-price-type">
               Boshlangich Narx
             </h3>
-            <p className="py-5 text-3xl md:text-4xl text-skin-main font-bold bg-gray-100  group-hover:bg-gray-200">
+            <p className="price-card-price">
               29.000 <span className="text-lg font-semibold">so'm</span>
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
             <button
@@ -428,32 +428,32 @@ const HomePage = () => {
               To'liq o'qish
             </button>
           </div>
-          <div className="text-center shadow-xl hover:shadow-2xl rounded-xl transform hover:scale-105 transition duration-500 group cursor-pointer">
-            <h3 className="text-skin-muted font-semibold text-2xl py-5">
+          <div className="price-card">
+            <h3 className="price-card-price-type">
               O'rtacha Narx
             </h3>
             <p className="py-5 text-3xl md:text-4xl text-skin-main font-bold bg-gray-100 group-hover:bg-gray-200">
               79.000 <span className="text-lg font-semibold">so'm</span>
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
             <button
@@ -463,32 +463,32 @@ const HomePage = () => {
               To'liq o'qish
             </button>
           </div>
-          <div className="text-center shadow-xl hover:shadow-2xl rounded-xl transform hover:scale-105 transition duration-500 group cursor-pointer">
-            <h3 className="text-skin-muted font-semibold text-2xl py-5">
+          <div className="price-card">
+            <h3 className="price-card-price-type">
               Yuqori Narx
             </h3>
-            <p className="py-5 text-3xl md:text-4xl text-skin-main font-bold bg-gray-100  group-hover:bg-gray-200">
+            <p className="price-card-price">
               109.000 <span className="text-lg font-semibold">so'm</span>
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
-            <p className="text-skin-muted font-medium py-4 border-b">
+            <p className="price-card-services-list">
               Trained Cleaner
             </p>
             <button
@@ -505,10 +505,10 @@ const HomePage = () => {
       <section className="max-w-6xl mx-auto py-10 md:py-16 px-8 lg:px-0">
         {/* content top */}
         <div className="text-center">
-          <h1 className="text-2xl md:text-4xl py-5 md:py-8 text-skin-base font-semibold">
+          <h1 className="text-2xl md:text-4xl py-5 md:py-8 text-skin-base dark:text-skin-dark_text_muted font-semibold">
             Biz Tabiiy Tozalash Vositalaridan Foydalanamiz
           </h1>
-          <p className="text-xs md:text-sm font-medium text-skin-muted">
+          <p className="text-xs md:text-sm font-medium text-skin-muted dark:text-skin-dark_text">
             Sizning xodimlaringiz, mijozlaringiz va mehmonlaringiz uchun toza va
             sog'lom muhitni ta'minlash uchun ko'p yillik tajribamiz, <br />{" "}
             malakali xodimlarimiz va ilg'or protseduralarimizdan foydalanaylik.{" "}
@@ -528,36 +528,36 @@ const HomePage = () => {
           {/* right reason */}
           <div>
             {/* <h4 className="text-2xl font-medium text-skin-base">Biz bunga bir nechta sabab keltira olamiz!</h4> */}
-            <p className="py-5 text-skin-base text-base lg:text-xl items-center font-semibold flex">
+            <p className="organic-items-p">
               {" "}
               <span className="text-green-500 mr-2">
                 <ImLeaf />
               </span>{" "}
               100% xavfsiz va tabiiy!{" "}
             </p>
-            <p className="font-medium text-sm text-skin-muted">
+            <p className="font-medium text-sm text-skin-muted dark:text-skin-dark_text">
               Biz mijozlarimizni qondirish va ularning obligatsiya pullarini
               qaytarish bo'yicha muvaffaqiyatli tajribaga egamiz.{" "}
             </p>
-            <p className="py-5 text-skin-base text-base lg:text-xl items-center font-semibold flex">
+            <p className="organic-items-p">
               {" "}
               <span className="text-green-500 mr-2">
                 <ImLeaf />
               </span>{" "}
               100% xavfsiz va tabiiy!{" "}
             </p>
-            <p className="font-medium text-sm text-skin-muted">
+            <p className="font-medium text-sm text-skin-muted dark:text-skin-dark_text">
               Biz mijozlarimizni qondirish va ularning obligatsiya pullarini
               qaytarish bo'yicha muvaffaqiyatli tajribaga egamiz.{" "}
             </p>
-            <p className="py-5 text-skin-base text-base lg:text-xl items-center font-semibold flex">
+            <p className="organic-items-p">
               {" "}
               <span className="text-green-500 mr-2">
                 <ImLeaf />
               </span>{" "}
               100% xavfsiz va tabiiy!{" "}
             </p>
-            <p className="font-medium text-sm text-skin-muted">
+            <p className="font-medium text-sm text-skin-muted dark:text-skin-dark_text">
               Biz mijozlarimizni qondirish va ularning obligatsiya pullarini
               qaytarish bo'yicha muvaffaqiyatli tajribaga egamiz.{" "}
             </p>
