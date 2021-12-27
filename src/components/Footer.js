@@ -28,7 +28,7 @@ const Footer = () => {
                      <div className="space-y-2">
                             <p onClick={() => router.push('/about')} className="footer-link">Biz Haqimizda</p>
                             <p onClick={() => router.push('/services')} className="footer-link">Hizmatlar</p>
-                            <p onClick={() => router.push('/projects')} className="footer-link">Proyektlar</p>
+                            <p onClick={() => router.push('/404')} className="footer-link">Proyektlar</p>
                             <p onClick={() => router.push('/faqs')} className="footer-link">Savollar</p>
                             <p onClick={() => router.push('/contact')} className="footer-link">Aloqa</p>
                       </div>

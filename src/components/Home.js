@@ -432,7 +432,7 @@ const HomePage = () => {
             <h3 className="price-card-price-type">
               O'rtacha Narx
             </h3>
-            <p className="py-5 text-3xl md:text-4xl text-skin-main font-bold bg-gray-100 group-hover:bg-gray-200">
+            <p className="price-card-price">
               79.000 <span className="text-lg font-semibold">so'm</span>
             </p>
             <p className="price-card-services-list">

@@ -73,7 +73,7 @@
   }
 
   .price-card-price {
-    @apply py-5 text-3xl md:text-4xl text-skin-main font-bold bg-gray-100  group-hover:bg-gray-200
+    @apply py-5 text-3xl md:text-4xl text-skin-main font-bold bg-gray-100  group-hover:bg-gray-200 dark:bg-skin-dark_main_bg
   }
 
   .price-card-price-type {

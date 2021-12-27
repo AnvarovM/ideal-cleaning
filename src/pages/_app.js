@@ -32,7 +32,7 @@ const MyApp = ({ Component, pageProps }) => {
           rel="stylesheet"
         />
       </Head>
-      <ThemeProvider enableSystem={true} attribute="class">
+      <ThemeProvider enableSystem={true} attribute="class" defaultTheme="system">
         <AuthProvider session={pageProps.session}>
           <Provider store={store}>
             <Component {...pageProps} />

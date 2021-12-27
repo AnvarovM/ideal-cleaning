@@ -1,8 +1,9 @@
 // react hooks
-import { useState, useEffect } from "react";
+import { useState, useEffect, useRef } from "react";
 
 // nav data for map
 import { navItems } from "../components/Data/navData";
+
 
 // react-icons
 import { HiOutlineMenuAlt3, HiUserCircle } from "react-icons/hi";
@@ -35,16 +36,17 @@ const Navbar = () => {
   const [sesssion] = useSession();
   const { systemTheme, theme, setTheme } = useTheme();
 
+
   const renderChangeTheme = () => {
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
     if (currentTheme === 'dark') {
       return (
-        <SunIcon className="w-7 h-7 text-white" role='button' onClick={() => setTheme('light')} />
+        <SunIcon className="w-8 h-8 text-white animate-pulse mx-2" role='button' onClick={() => setTheme('light')} />
       )
     }else{
       return (
-        <MoonIcon className="w-7 h-7 text-gray-500" role='button' onClick={() => setTheme('dark')} />
+        <MoonIcon className="w-8 h-8 text-gray-500 animate-pulse mx-2" role='button' onClick={() => setTheme('dark')} />
       )
     }
   }
