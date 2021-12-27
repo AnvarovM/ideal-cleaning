@@ -174,7 +174,7 @@ const Navbar = () => {
       {navItems.map((item) => (
         <div
           key={item.id}
-          className={openNav ? "z-40 bg-white shadow-lg" : "hidden"}
+          className={openNav ? "z-40 bg-white dark:bg-skin-dark_main_bg shadow-lg" : "hidden"}
         >
           <p
             onClick={() => router.push(`${item.path}`)}
