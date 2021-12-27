@@ -178,7 +178,7 @@ const Navbar = () => {
         >
           <p
             onClick={() => router.push(`${item.path}`)}
-            className="cursor-pointer flex flex-col z-40 font-medium uppercase px-8 md:px-20 lg:px-32 py-4 hover:bg-gray-200 border-l-4 border-t border-b border-l-transparent hover:border-gray-500"
+            className="cursor-pointer flex flex-col z-40 font-medium uppercase px-8 md:px-20 lg:px-32 py-4 hover:bg-gray-200 dark:hover:bg-skin-dark_secondary_bg border-l-4 border-t border-b border-l-transparent hover:border-gray-500"
           >
             {item.title}
           </p>
