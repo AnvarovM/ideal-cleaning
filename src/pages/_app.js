@@ -1,4 +1,5 @@
 import Head from "next/head";
+import { appWithTranslation } from "next-i18next";
 import { Provider } from "react-redux";
 import ProgressBar from "@badrap/bar-of-progress";
 import { Provider as AuthProvider } from "next-auth/client";
@@ -43,4 +44,4 @@ const MyApp = ({ Component, pageProps }) => {
   );
 };
 
-export default MyApp;
+export default appWithTranslation(MyApp);

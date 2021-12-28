@@ -36,7 +36,7 @@ const Header = () => {
       <div className="cursor-move">
         <Slider {...settings}>
           <div className="relative border-transparent">
-            <div className="carousel-bg-opacity0" />
+            <div className="carousel-bg-opacity" />
             <img
               className="carousel--image"
               src="https://pro2-bar-s3-cdn-cf1.myportfolio.com/919de9a5f1ec66520ff115a407e70088/cfc45c5d-354c-439e-aba6-588334726bed_rw_1920.png?h=7457744d92c19c1164049879edea5cda"
@@ -47,7 +47,7 @@ const Header = () => {
               alt="carousel-image"
             />
             <div className="carousel--content-div">
-            <div className="carousel-bg-opacity0" />
+            <div className="carousel-bg-opacity" />
               <h1 ref={(el) => (heading = el)} className="carousel--content-h1">
                 Hech kim buni bizdan... <br /> yaxshi qila olmaydi!{" "}
               </h1>

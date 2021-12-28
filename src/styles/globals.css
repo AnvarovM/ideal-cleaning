@@ -8,10 +8,10 @@
     --color-text-base: #252525;
     --color-text-muted: #3d4c58;
     --color-text-white: #ffffff;
-    --dark-main-bg: #1a2039;
-    --dark-secondary-bg: #252846;
-    --dark-text-color: #efefef;
-    --dark-text-muted: #9c9c9c;
+    --dark-main-bg: #162447;
+    --dark-secondary-bg: #1F4068;
+    --dark-text-color: #B1D0E0;
+    --dark-text-muted: #efefef;
   }
 }
 
@@ -41,7 +41,7 @@
   }
 
   .carousel-bg-opacity {
-    @apply absolute top-0 bottom-0 left-0 right-0 opacity-0 dark:bg-black dark:bg-opacity-20
+    @apply absolute top-0 bottom-0 left-0 right-0 dark:bg-purple-900 dark:bg-opacity-20 filter dark:brightness-[30%]
   }
 
   .main--btn {

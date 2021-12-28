@@ -4,6 +4,8 @@ import { useState, useEffect } from "react";
 // next.js
 import Head from "next/head";
 import { useRouter } from "next/router";
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from "next-i18next";
 
 // components
 import Navbar from "../components/Navbar";
@@ -12,8 +14,20 @@ import HomePage from "../components/Home";
 import HomeLoading from "../components/Loader/HomeLoading";
 import Footer from "../components/Footer";
 
-export default function Home() {
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['home']))
+    }
+  }
+}
+
+
+export default function Home(props) {
   const [loading, setLoading] = useState(false);
+  const router = useRouter();
+  const { t } = useTranslation();
+  const { locale } = router;
 
   useEffect(() => {
     setLoading(true);
@@ -32,8 +46,9 @@ export default function Home() {
         <HomeLoading />
       ) : (
         <div className="dark:bg-skin-dark_secondary_bg">
-          <Navbar />
+          <Navbar locale={locale} />
           <Header />
+          {t("home:navbar_adress")}
           <HomePage />
           <Footer />
         </div>

@@ -16,8 +16,8 @@ module.exports = {
           white: "var(--color-text-white)",
           dark_main_bg: "var(--dark-main-bg)",
           dark_secondary_bg: "var(--dark-secondary-bg)",
-          dark_text: 'var(--dark-text-color)',
-          dark_text_muted: 'var(--dark-text-muted)'
+          dark_text: "var(--dark-text-color)",
+          dark_text_muted: "var(--dark-text-muted)",
         },
       },
     },

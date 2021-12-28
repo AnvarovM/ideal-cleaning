@@ -223,21 +223,22 @@ const HomePage = () => {
           bgImageAlt="the cat"
           strength={200}
         ></Parallax>
+        <div className="carousel-bg-opacity" />
         <div className="static lg:absolute lg:top-0 lg:bottom-0 lg:left-0 lg:right-0 grid grid-cols-1 lg:grid-cols-2 items-center space-x-0 md:space-x-4 py-8 lg:py-16 max-w-6xl mx-auto px-8 lg:px-0">
           <div className="space-y-3">
-            <h3 className="text-2xl lg:text-4xl font-medium text-skin-main dark:text-skin-dark_text lg:text-skin-white">
+            <h3 className="text-2xl lg:text-4xl font-medium text-skin-main dark:text-skin-dark_text_muted lg:text-skin-white">
               <span className="text-3xl lg:text-5xl font-semibold"> 10 </span>{" "}
               Yillik Tajriba{" "}
             </h3>
 
-            <p className="text-skin-muted text-sm lg:text-white lg:text-base font-medium">
+            <p className="text-skin-muted dark:text-skin-dark_text text-sm lg:text-white lg:text-base font-medium">
               Ham samarali, ham sifatli xizmatni qidiryapsizmi? Ishchilarimiz
               siz qidirayotgan narsa bo'lishi mumkin. Kompaniya juda tartibli:
               uyingizga kelgan har bir hizmatchi guruhiga nazoratchi vazifasini
               bajaradigan guruh rahbari kiradi.
             </p>
 
-            <p className="text-skin-muted text-sm lg:text-white lg:text-base font-medium">
+            <p className="text-skin-muted dark:text-skin-dark_text text-sm lg:text-white lg:text-base font-medium">
               Tozalash vaqtida dala menejeri vaqti-vaqti bilan tozalanganligini
               tekshirish uchun hozir bo'ladi. Xizmat 100% kafolatlangan va
               ko'pchilik o'z ishlaridan juda mamnun. Ammo yodda tutish kerak
