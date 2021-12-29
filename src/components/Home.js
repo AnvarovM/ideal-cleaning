@@ -16,7 +16,7 @@ import { GiVacuumCleaner } from "react-icons/gi";
 // next.js
 import { useRouter } from "next/router";
 
-const HomePage = () => {
+const HomePage = ({ t }) => {
   const router = useRouter();
   const settings = {
     dots: true,
@@ -32,21 +32,18 @@ const HomePage = () => {
       <section className="max-w-6xl mx-auto py-10 md:py-16 px-8 lg:px-0">
         <div className="text-center">
           <h1 className="text-2xl md:text-4xl py-5 md:py-8 whitespace-nowrap text-skin-base dark:text-skin-dark_text_muted font-semibold">
-            Bizning <span className="hidden md:inline">Tozalash</span>{" "}
-            Hizmatlarimiz.
+            {t("home:services_heading")}
           </h1>
           <p className="text-xs md:text-sm font-medium text-skin-muted dark:text-skin-dark_text">
-            Sizning xodimlaringiz, mijozlaringiz va mehmonlaringiz uchun toza va
-            sog'lom muhitni ta'minlash uchun ko'p yillik tajribamiz, <br />{" "}
-            malakali xodimlarimiz va ilg'or protseduralarimizdan foydalanaylik.{" "}
+            {t("home:services_list_paragraph")}
           </p>
         </div>
 
         <div className="py-10 overflow-x-auto flex space-x-5 scrollbar-hide">
           <div className="services-card">
-            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-100" />
+          <img src="https://lbappliance.com/wp-content/uploads/2020/04/washing-machine-ol-512-480x480.png" className="mx-auto w-16 md:w-20 my-4 dark:bg-gray-400 rounded-lg" />
             <h2 className="text-xl font-semibold text-skin-base dark:text-skin-dark_text_muted text-center">
-              Oyna Tozalash
+              {t("home:services1_name")}
             </h2>
             <div className="pt-5">
               <div className="flex items-center justify-center">
@@ -72,9 +69,9 @@ const HomePage = () => {
             </p>
           </div>
           <div className="services-card">
-            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-100" />
+          <img src="https://cdn1.iconfinder.com/data/icons/electronics-151/64/37-512.png" className="mx-auto w-16 md:w-20 my-4 dark:bg-gray-400 rounded-lg" />
             <h2 className="text-xl font-semibold text-skin-base dark:text-skin-dark_text_muted text-center">
-              Oyna Tozalash
+               {t("home:services2_name")}
             </h2>
             <div className="pt-5">
               <div className="flex items-center justify-center">
@@ -100,9 +97,9 @@ const HomePage = () => {
             </p>
           </div>
           <div className="services-card">
-            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-100" />
+            <img src="https://cdn0.iconfinder.com/data/icons/home-electric/512/washing-machine-laundry-clothes-wash-512.png" className="mx-auto w-16 md:w-20 my-4 dark:bg-gray-400 rounded-lg" />
             <h2 className="text-xl font-semibold text-skin-base dark:text-skin-dark_text_muted text-center">
-              Oyna Tozalash
+              {t("home:services3_name")}
             </h2>
             <div className="pt-5">
               <div className="flex items-center justify-center">
@@ -128,9 +125,9 @@ const HomePage = () => {
             </p>
           </div>
           <div className="services-card">
-            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-100" />
+          <img src="https://image.flaticon.com/icons/png/512/447/447407.png" className="mx-auto w-16 md:w-20 my-4 dark:bg-gray-400 rounded-lg" />
             <h2 className="text-xl font-semibold text-skin-base dark:text-skin-dark_text_muted text-center">
-              Oyna Tozalash
+              {t("home:services4_name")}
             </h2>
             <div className="pt-5">
               <div className="flex items-center justify-center">
@@ -156,9 +153,9 @@ const HomePage = () => {
             </p>
           </div>
           <div className="services-card">
-            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-100" />
+          <img src="https://freepngimg.com/thumb/symbol/84533-laundry-text-towel-black-washing-machines.png" className="mx-auto w-16 md:w-20 my-4 dark:bg-gray-400 rounded-lg" />
             <h2 className="text-xl font-semibold text-skin-base dark:text-skin-dark_text_muted text-center">
-              Oyna Tozalash
+            {t("home:services5_name")}
             </h2>
             <div className="pt-5">
               <div className="flex items-center justify-center">
@@ -184,9 +181,9 @@ const HomePage = () => {
             </p>
           </div>
           <div className="services-card">
-            <GiWindow className="text-6xl mx-auto text-skin-main my-4 transform group-hover:scale-105 transition duration-100" />
+          <img src="http://cdn.onlinewebfonts.com/svg/img_449814.svg" className="mx-auto w-16 md:w-20 my-4 dark:bg-gray-400 rounded-lg" />
             <h2 className="text-xl font-semibold text-skin-base dark:text-skin-dark_text_muted text-center">
-              Oyna Tozalash
+            {t("home:services6_name")}
             </h2>
             <div className="pt-5">
               <div className="flex items-center justify-center">

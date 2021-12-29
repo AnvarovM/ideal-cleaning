@@ -1,18 +1,38 @@
+// next.js
 import Head from "next/head";
+import { useRouter } from "next/router";
+
+// components
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import { useRouter } from "next/router";
 import { navItems } from "../components/Data/navData";
 
+//i18-next
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
+// i18-next Static props function
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['home']))
+    }
+  }
+}
+
 export default function Home() {
+  // next.js router
   const router = useRouter();
+
   return (
     <div className="dark:bg-skin-dark_secondary_bg">
+
       <Head>
         <title>Ideal Cleaning | Services</title>
       </Head>
 
+      {/* navbar component */}
       <Navbar />
+
       {/* breadcrumb */}
       <header className="flex items-center px-8 md:px-20 lg:px-32 py-5 font-medium bg-[#f3f4f6] dark:bg-skin-dark_secondary_bg dark:shadow-md space-x-4">
           <h5
@@ -23,10 +43,11 @@ export default function Home() {
           </h5>
           <span className="text-xl">›</span>
           <p className="text-skin-muted dark:text-skin-dark_text_muted">Xizmatlar</p>
-        </header>
+      </header>
 
       <main>
         <section className="max-w-7xl mx-auto px-8 lg:px-0">
+
           {/* services heading */}
           <div className="text-center">
             <h1 className="text-2xl md:text-4xl py-5 md:py-8 text-skin-base dark:text-skin-dark_text_muted font-semibold">

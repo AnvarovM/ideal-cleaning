@@ -3,11 +3,20 @@ import { appWithTranslation } from "next-i18next";
 import { Provider } from "react-redux";
 import ProgressBar from "@badrap/bar-of-progress";
 import { Provider as AuthProvider } from "next-auth/client";
+
 import { ThemeProvider } from "next-themes";
 import Router from "next/router";
 import { store } from "../app/store";
 import "../styles/globals.css";
 import "../styles/index.css";
+
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['home']))
+    }
+  }
+}
 
 const progress = new ProgressBar({
   size: 3,

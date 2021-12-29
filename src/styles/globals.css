@@ -10,7 +10,7 @@
     --color-text-white: #ffffff;
     --dark-main-bg: #162447;
     --dark-secondary-bg: #1F4068;
-    --dark-text-color: #B1D0E0;
+    --dark-text-color: #DFEFF9;
     --dark-text-muted: #efefef;
   }
 }
@@ -33,7 +33,7 @@
   }
 
   .carousel--content-h1 {
-    @apply text-xl sm:text-3xl lg:text-5xl whitespace-nowrap font-medium uppercase tracking-wider;
+    @apply text-xl sm:text-3xl lg:text-5xl whitespace-normal font-medium uppercase tracking-wider;
   }
 
   .carousel--content-btn {

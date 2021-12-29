@@ -2,6 +2,9 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
+//i18-next
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
 // react-icons
 import { LocationMarkerIcon, PhoneIcon, ClockIcon} from '@heroicons/react/solid'
 import { FaTelegram, FaInstagramSquare, FaFacebook } from 'react-icons/fa'
@@ -11,6 +14,15 @@ import { MdCall } from "react-icons/md";
 import Footer from "../components/Footer";
 import Map from "../components/Map";
 import Navbar from "../components/Navbar";
+
+// i18-next Static props function
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['home']))
+    }
+  }
+}
 
 export default function Home() {
 
@@ -35,7 +47,6 @@ export default function Home() {
           <span className="text-xl">›</span>
           <p className="text-skin-muted dark:text-skin-dark_text_muted">Aloqa</p>
       </header>
-      {/* <HomeLoading /> */}
 
       <div className="">
         <div className="max-w-7xl mx-auto py-6  md:py-16 px-8 lg:px-0">

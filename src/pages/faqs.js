@@ -5,6 +5,9 @@ import { useState, useEffect, useRef } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 
+//i18-next
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+
 // components
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
@@ -13,10 +16,18 @@ import Accordion from "../components/Accordion/Accordion";
 // accordion data
 import { generalQuestion, cleaningQuestionsData } from "../components/Data/accordionData";
 
+// i18-next Static props function
+export async function getStaticProps({ locale }) {
+  return {
+    props: {
+      ...(await serverSideTranslations(locale, ['home']))
+    }
+  }
+}
+
 export default function Home() {
   // router
   const router = useRouter();
-
   // useState
   const [toggle, setToggle] = useState(0);
 
@@ -42,6 +53,7 @@ export default function Home() {
       </header>
 
       <main className="max-w-7xl mx-auto">
+        
         {/* Ko'p beriladigan savollar */}
         <div className="text-center">
           <h1 className="text-2xl md:text-4xl py-5 md:py-8 text-skin-base dark:text-skin-dark_text_muted font-semibold">
@@ -53,7 +65,6 @@ export default function Home() {
             malakali xodimlarimiz va ilg'or protseduralarimizdan foydalanaylik.{" "}
           </p>
         </div>
-
 
         {/* Accordion */}
         <section className="py-10 px-4 lg:px-0">

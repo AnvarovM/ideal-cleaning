@@ -10,7 +10,7 @@ import { gsap, TweenMax, Power3 } from "gsap";
 // import Navbar from "./Navbar";
 import { useRouter } from "next/router";
 
-const Header = () => {
+const Header = (props) => {
   const router = useRouter();
   let heading = useRef(null);
   const settings = {
@@ -49,13 +49,13 @@ const Header = () => {
             <div className="carousel--content-div">
             <div className="carousel-bg-opacity" />
               <h1 ref={(el) => (heading = el)} className="carousel--content-h1">
-                Hech kim buni bizdan... <br /> yaxshi qila olmaydi!{" "}
+              {props.t("home:header_slider1")}
               </h1>
               <button
                 onClick={() => router.push("/contact")}
                 className="carousel--content-btn"
               >
-                Aloqaga chiqish
+                {props.t("home:header_aloqa_btn")}
               </button>
             </div>
           </div>
@@ -73,19 +73,18 @@ const Header = () => {
             />
             <div className="carousel--content-div">
               <h1 ref={(el) => (heading = el)} className="carousel--content-h1">
-                {" "}
-                Oldingidanda Toza & Yangi... <br /> Biz vada beramiz!{" "}
+                {props.t("home:header_slider2")}
               </h1>
               <button
                 onClick={() => router.push("/contact")}
                 className="carousel--content-btn"
               >
-                Aloqaga chiqish
+                {props.t("home:header_aloqa_btn")}
               </button>
             </div>
           </div>
           <div className="relative border-transparent">
-          <div className="carousel-bg-opacity0" />
+          <div className="carousel-bg-opacity" />
             <img
               className="carousel--image"
               src="https://praniefiran.pl/wp-content/uploads/2018/02/tlo.png"
@@ -98,14 +97,13 @@ const Header = () => {
             />
             <div className="carousel--content-div">
               <h1 ref={(el) => (heading = el)} className="carousel--content-h1">
-                Ishonishigiz mumkin bo'lgan... <br /> tajribali tozalash
-                hizmati!{" "}
+              {props.t("home:header_slider3")}
               </h1>
               <button
                 onClick={() => router.push("/contact")}
                 className="carousel--content-btn"
               >
-                Aloqaga chiqish
+                {props.t("home:header_aloqa_btn")}
               </button>
             </div>
           </div>
