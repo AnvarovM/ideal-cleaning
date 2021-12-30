@@ -45,7 +45,7 @@ const Footer = () => {
                    <div>
                     <h2 className="py-6 text-xl font-medium text-skin-base dark:text-skin-dark_text_muted uppercase">Hoziroq yozing!</h2>
                      <div className="space-y-2">
-                            <p className="footer-link">Biz tabiiy va ekologik toza tozalash vositalaridan foydalanamiz va mijozlar ehtiyojini qondirish kafolatiga egamiz.</p>
+                            <p className="footer-link  no-underline">Biz tabiiy va ekologik toza tozalash vositalaridan foydalanamiz va mijozlar ehtiyojini qondirish kafolatiga egamiz.</p>
                             <div className="p-2 rounded-md bg-gray-50 flex w-72">
                                 <input value={searchInput} onChange={(e) => setSearchInput(e.target.value)} className="outline-none bg-transparent " type="text" placeholder="Emailingizni kiriting..." />
                                 <button className="text-sm rounded-md text-skin-base dark:text-skin-dark_text border bg-gray-300 dark:bg-skin-dark_main_bg p-2 focus:border-none" type="button">Yuborish</button>
@@ -59,7 +59,7 @@ const Footer = () => {
                       </div>
                    </div>
                 </div>
-                <div className="border-t mt-4 pt-4 border-skin-base text-center">
+                <div className="border-t mt-4 pt-4 border-skin-base dark:border-gray-400 text-center">
                     <p> 
                         <Link href="https://teamit.uz">
                         <span className="text-skin-base dark:text-skin-dark_text_muted font-semibold animate-pulse cursor-pointer pr-1">TeamIt coders,</span>

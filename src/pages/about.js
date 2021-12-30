@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import Link from "next/link";
+import { useTranslation } from "next-i18next";
 
 // react-icons
 import { MdDryCleaning, MdCleanHands } from "react-icons/md";
@@ -13,7 +14,7 @@ import { MdCall } from "react-icons/md";
 // components
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
-import HomeLoading from "../components/Loader/HomeLoading";
+
 //i18-next
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 
@@ -28,6 +29,7 @@ export async function getStaticProps({ locale }) {
 
 export default function Home() {
   const router = useRouter();
+  const { t } = useTranslation();
   return (
     <div className="dark:bg-skin-dark_secondary_bg">
       <Head>
@@ -42,10 +44,10 @@ export default function Home() {
             onClick={() => router.push("/")}
             className="text-skin-main cursor-pointer"
           >
-            Asosiy Sahifa
+            {t("home:nav_home")}
           </h5>
           <span className="text-xl">›</span>
-          <p className="text-skin-muted dark:text-skin-dark_text_muted">Biz Haqimizda</p>
+          <p className="text-skin-muted dark:text-skin-dark_text_muted">{t("home:nav_about")}</p>
         </header>
 
         <main className="g">

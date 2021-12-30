@@ -10,7 +10,7 @@ import { useTranslation } from "next-i18next";
 import Navbar from "../components/Navbar";
 import Header from "../components/Header";
 import HomePage from "../components/Home";
-import HomeLoading from "../components/Loader/HomeLoading";
+import Loader from "../components/Loader";
 import Footer from "../components/Footer";
 
 export async function getStaticProps({ locale }) {
@@ -42,7 +42,7 @@ export default function Home(props) {
       </Head>
 
       {loading ? (
-        <HomeLoading />
+        <Loader />
       ) : (
         <div className="dark:bg-skin-dark_secondary_bg">
           <Navbar />
