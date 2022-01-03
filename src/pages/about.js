@@ -22,7 +22,7 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['home']))
+      ...(await serverSideTranslations(locale, ['about', 'home']))
     }
   }
 }
@@ -55,13 +55,10 @@ export default function Home() {
             {/* Biz haqimizda */}
             <div className="text-center">
               <h1 className="text-2xl md:text-4xl py-5 md:py-8 text-skin-base dark:text-skin-dark_text_muted font-semibold">
-                Biz Haqimizda
+                {t("about:about_us_heading")}
               </h1>
               <p className="text-xs md:text-sm font-medium text-skin-muted dark:text-skin-dark_text">
-                Sizning xodimlaringiz, mijozlaringiz va mehmonlaringiz uchun
-                toza va sog'lom muhitni ta'minlash uchun ko'p yillik tajribamiz,{" "}
-                <br /> malakali xodimlarimiz va ilg'or protseduralarimizdan
-                foydalanaylik.{" "}
+               {t("about:about_us_p")}
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-2 items-center py-10">
@@ -73,37 +70,22 @@ export default function Home() {
               />
               <div className="space-y-3">
                 <h3 className="text-2xl lg:text-4xl font-medium text-skin-main dark:text-skin-dark_text_muted">
-                  <span className="text-3xl lg:text-5xl font-semibold">
-                    {" "}
-                    10{" "}
-                  </span>{" "}
-                  Yillik Tajriba{" "}
+                {t("about:about_year_experience")}
                 </h3>
 
                 <p className="text-skin-muted dark:text-skin-dark_text text-sm font-medium">
-                  Ham samarali, ham sifatli xizmatni qidiryapsizmi?
-                  Ishchilarimiz siz qidirayotgan narsa bo'lishi mumkin.
-                  Kompaniya juda tartibli: uyingizga kelgan har bir hizmatchi
-                  guruhiga nazoratchi vazifasini bajaradigan guruh rahbari
-                  kiradi.
+                {t("about:about_exp_p1")}
                 </p>
 
                 <p className="text-skin-muted dark:text-skin-dark_text text-sm font-medium">
-                  Tozalash vaqtida dala menejeri vaqti-vaqti bilan
-                  tozalanganligini tekshirish uchun hozir bo'ladi. Xizmat 100%
-                  kafolatlangan va ko'pchilik o'z ishlaridan juda mamnun. Ammo
-                  yodda tutish kerak bo'lgan bir narsa: Ba'zi bir oldingi
-                  foydalanuvchilar uyingizni tozalashning boshlang'ich narxini
-                  kam baholaganidan shikoyat qilishgan, shuning uchun siz
-                  haqiqatga yaqin bo'lish uchun ularning hisobiga yana yuz yoki
-                  undan ko'proq pul qo'shishingiz mumkin.
+                {t("about:about_exp_p2")}
                 </p>
 
                 <button
                   onClick={() => router.push("/contact")}
                   className="main--btn"
                 >
-                  Aloqga Chiqish
+                  {t("about:about_contact_btn")}
                 </button>
               </div>
             </div>
@@ -114,12 +96,10 @@ export default function Home() {
                 <MdCleanHands className="text-[6rem] md:text-[8rem] text-skin-main" />
                 <div className="space-y-3">
                   <h3 className="text-xl md:text-2xl font-semibold text-skin-base dark:text-skin-dark_text_muted">
-                    Bizning Maqsadimiz
+                  {t("about:about_goal_heading")}
                   </h3>
                   <p className="font-medium text-skin-muted  dark:text-skin-dark_text">
-                    Aims to be a national market leader in the provision of
-                    cleaning services delivering reliable, quality, cost
-                    effective cleaning solutions to our customers
+                  {t("about:about_goal_p")}
                   </p>
                 </div>
               </div>
@@ -127,12 +107,10 @@ export default function Home() {
                 <MdDryCleaning className="text-[6rem] md:text-[8rem] text-skin-main" />
                 <div className="space-y-3">
                   <h3 className="text-xl md:text-2xl font-semibold text-skin-base dark:text-skin-dark_text_muted">
-                    Bizning Vazifamiz
+                  {t("about:about_mission_heading")}
                   </h3>
                   <p className="font-medium text-skin-muted  dark:text-skin-dark_text">
-                    Aims to be a national market leader in the provision of
-                    cleaning services delivering reliable, quality, cost
-                    effective cleaning solutions to our customers
+                  {t("about:about_mission_p")}
                   </p>
                 </div>
               </div>
@@ -142,70 +120,49 @@ export default function Home() {
             <div className="pt-10">
               <div className="text-center text-skin-muted dark:text-skin-dark_text_muted">
                 <h1 className="text-2xl md:text-4xl py-4 text-skin-base dark:text-skin-dark_text_muted font-semibold">
-                  Biz Tozalash Hizmatimiz Tarixi
+                {t("about:about_history_heading")}
                 </h1>
                 <p className="text-xl font-semibold py-3">
-                  10 yilda ortiq vaqt ichida ximchistka va akvachista
-                  hizmatarimizni taklif qildik
+                {t("about:about_history_strong_p")}
                 </p>
                 <p className="text-xs md:text-sm font-medium ">
-                  Biz Jizzax shahri bo'ylab professional va yuqori sifatli
-                  ximchista va akvachista xizmatlarini ko'rsatib, mijozlarimiz
-                  uchun mukammallik va fidoyilik tariximiz bor.
+                {t("about:about_history_p")}
                 </p>
               </div>
 
               <div className="grid grid-cols-1 md:grid-cols-3 gap-6 py-10 text-center md:text-left">
                 <p className="text-skin-muted dark:text-skin-dark_text font-medium">
-                  Tozalash kompaniyasi atrof-muhitga do'stona munosabatda
-                  bo'lgan holda mijozlarimizga xizmat ko'rsatish majburiyatimiz
-                  uchun keng e'tirof etilgan. Biz Jizzax bo'ylab ximchista va
-                  akfachistka xizmatlarini ko'rsatib, mijozlarimizga sadoqat va
-                  mukammallik tariximiz bor.{" "}
+                {t("about:about_history_article1")}
                 </p>
                 <p className="text-skin-muted dark:text-skin-dark_text font-medium">
-                  Tozalash kompaniyasi atrof-muhitga do'stona munosabatda
-                  bo'lgan holda mijozlarimizga xizmat ko'rsatish majburiyatimiz
-                  uchun keng e'tirof etilgan. Biz Jizzax bo'ylab ximchista va
-                  akfachistka xizmatlarini ko'rsatib, mijozlarimizga sadoqat va
-                  mukammallik tariximiz bor.
+                {t("about:about_history_article2")}
                 </p>
                 <p className="text-skin-muted dark:text-skin-dark_text font-medium">
-                  Tozalash kompaniyasi atrof-muhitga do'stona munosabatda
-                  bo'lgan holda mijozlarimizga xizmat ko'rsatish majburiyatimiz
-                  uchun keng e'tirof etilgan. Biz Jizzax bo'ylab ximchista va
-                  akfachistka xizmatlarini ko'rsatib, mijozlarimizga sadoqat va
-                  mukammallik tariximiz bor.
+                {t("about:about_history_article3")}
                 </p>
               </div>
             </div>
 
+            {/* history */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center py-10">
               <div className="space-y-3">
                 <h3 className="text-2xl lg:text-4xl font-medium text-skin-main dark:text-skin-dark_text_muted">
-                  Kafolatlanga Xizmat
+                {t("about:about_history_heading")}
                 </h3>
 
                 <p className="text-skin-muted  dark:text-skin-dark_text text-sm font-semibold">
-                  Ideal Cleaning kompaniyasining hodimlari Jizzax bo'ylab
-                  mijozlarimiz uchun a'lo darajadagi ximchistka va akvachiska
-                  xizmatlarini taqdim etishga intiladi.
+                {t("about:about_history_strong_p")}
                 </p>
 
                 <p className="text-skin-muted dark:text-skin-dark_text text-sm font-semibold">
-                  Agar biz tozalagan joy sizni qoniqtirmasa, shunchaki 24 soat
-                  ichida qo'ng'iroq qiling va biz qaytib kelib, uni bepul
-                  tozalaymiz. Bu tozalash kompaniyasini yollashni deyarli
-                  xavf-xatarsiz qiladi. Bizning ishchilarimiz qat'iy ishga qabul
-                  qilish jarayoni orqali sinchkovlik bilan tekshiriladi va
-                  ularning har biri bizning tekshiruv o'quv jarayonidan o'tadi.
+                {t("about:about_history_p")}
                 </p>
 
                 <button
                   onClick={() => router.push("/contact")}
                   className="main--btn"
                 >
-                  Aloqga Chiqish
+                  {t("about:about_contact_btn")}
                 </button>
               </div>
               <div className="hover:scale-105 transform transition duration-300 relative">
@@ -227,7 +184,7 @@ export default function Home() {
             <div className="items-center justify-around  sm:pb-6  rounded-md">
               <div className="sm:text-center lg:text-left">
                 <p className="text-skin-base  dark:text-skin-dark_text mb-2 text-xl font-medium">
-                  Hoziroq Qo'ng'iroq qiling!
+                {t("about:about_call_now")}
                 </p>
                 <div className="flex text-skin-main dark:text-skin-dark_text_muted text-2xl lg:text-4xl transition-all duration-300 font-semibold sm:justify-center lg:justify-start">
                   <div className="relative">

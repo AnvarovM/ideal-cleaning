@@ -10,13 +10,7 @@ import { store } from "../app/store";
 import "../styles/globals.css";
 import "../styles/index.css";
 
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ['home']))
-    }
-  }
-}
+
 
 const progress = new ProgressBar({
   size: 3,

@@ -144,7 +144,7 @@ const Navbar = () => {
             <span className="items-center hidden md:inline-flex space-x-1">
               {" "}
               <LocationMarkerIcon className="h-4" />{" "}
-              <p className="text-xsfont-medium">{t("home:navbar_adress")}</p>{" "}
+              <p className="text-xs font-medium">{t("home:navbar_adress")}</p>{" "}
             </span>
             <span className="flex items-center space-x-1">
               {" "}

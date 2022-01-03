@@ -8,6 +8,7 @@ import Navbar from "../components/Navbar";
 
 //i18-next
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from "next-i18next";
 
 // i18-next Static props function
 export async function getStaticProps({ locale }) {
@@ -21,6 +22,7 @@ export async function getStaticProps({ locale }) {
 export default function Home() {
   // next router 
   const router = useRouter();
+  const { t } = useTranslation();
 
   return (
     <div className="dark:bg-skin-dark_secondary_bg">
@@ -38,7 +40,7 @@ export default function Home() {
             onClick={() => router.push("/")}
             className="text-skin-main cursor-pointer"
           >
-            Asosiy Sahifa
+            {t("home:nav_home")}
           </h5>
           <span className="text-xl">›</span>
           <p className="text-skin-muted dark:text-skin-dark_text_muted">404</p>
