@@ -15,16 +15,16 @@ import Navbar from "../components/Navbar";
 import Accordion from "../components/Accordion/Accordion";
 
 // accordion data
-import {
-  generalQuestion,
-  cleaningQuestionsData,
-} from "../components/Data/accordionData";
+// import {
+//   generalQuestion,
+//   cleaningQuestionsData,
+// } from "../components/Data/accordionData";
 
 // i18-next Static props function
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ["home"])),
+      ...(await serverSideTranslations(locale, ["faqs", "home"])),
     },
   };
 }
@@ -32,9 +32,56 @@ export async function getStaticProps({ locale }) {
 export default function Home() {
   // router
   const router = useRouter();
+  
   // useState
   const [toggle, setToggle] = useState(0);
   const { t } = useTranslation();
+
+  const generalQuestion = [
+    {
+      id: 1,
+      question: `${t("faqs:accordion_data_h1")}`,
+      answer: `${t("faqs:accordion_data_p")}`,
+    },
+    {
+      id: 1,
+      question: `${t("faqs:accordion_data_h1")}`,
+      answer: `${t("faqs:accordion_data_p")}`,
+    },
+    {
+      id: 1,
+      question: `${t("faqs:accordion_data_h1")}`,
+      answer: `${t("faqs:accordion_data_p")}`,
+    },
+    {
+      id: 1,
+      question: `${t("faqs:accordion_data_h1")}`,
+      answer: `${t("faqs:accordion_data_p")}`,
+    },
+  ];
+
+  const cleaningQuestionsData = [
+    {
+      id: 1,
+      question: `${t("faqs:accordion_data_h1")}`,
+      answer: `${t("faqs:accordion_data_p")}`,
+    },
+    {
+      id: 1,
+      question: `${t("faqs:accordion_data_h1")}`,
+      answer: `${t("faqs:accordion_data_p")}`,
+    },
+    {
+      id: 1,
+      question: `${t("faqs:accordion_data_h1")}`,
+      answer: `${t("faqs:accordion_data_p")}`,
+    },
+    {
+      id: 1,
+      question: `${t("faqs:accordion_data_h1")}`,
+      answer: `${t("faqs:accordion_data_p")}`,
+    },
+  ];
 
   return (
     <div className="dark:bg-skin-dark_secondary_bg">
@@ -55,7 +102,7 @@ export default function Home() {
         </h5>
         <span className="text-xl">›</span>
         <p className="text-skin-muted dark:text-skin-dark_text_muted">
-        {t("home:nav_faqs")}
+          {t("home:nav_faqs")}
         </p>
       </header>
 
@@ -63,25 +110,23 @@ export default function Home() {
         {/* Ko'p beriladigan savollar */}
         <div className="text-center">
           <h1 className="text-2xl md:text-4xl py-5 md:py-8 text-skin-base dark:text-skin-dark_text_muted font-semibold">
-            Ko'p Beriladigan Savollar
+            {t("faqs:faq_heading")}
           </h1>
           <p className="text-xs md:text-sm font-medium text-skin-muted dark:text-skin-dark_text">
-            Sizning xodimlaringiz, mijozlaringiz va mehmonlaringiz uchun toza va
-            sog'lom muhitni ta'minlash uchun ko'p yillik tajribamiz, <br />{" "}
-            malakali xodimlarimiz va ilg'or protseduralarimizdan foydalanaylik.{" "}
+          {t("faqs:faq_p")}
           </p>
         </div>
 
         {/* Accordion */}
         <section className="py-10 px-4 lg:px-0">
           <p className="text-skin-base dark:text-skin-dark_text_muted text-xl lg:text-2xl font-semibold py-4">
-            Umumiy Savollar
+            {t("faqs:faq_general_questions")}
           </p>
           {generalQuestion.map(({ question, answer }) => (
             <Accordion question={question} answer={answer} />
           ))}
           <p className="text-skin-base dark:text-skin-dark_text_muted text-xl lg:text-2xl font-semibold py-4">
-            Ish Bo'yicha Savollar
+            {t("faqs:faq_job_questions")}
           </p>
           {cleaningQuestionsData.map(({ question, answer }) => (
             <Accordion question={question} answer={answer} />

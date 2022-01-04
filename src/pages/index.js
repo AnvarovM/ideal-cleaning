@@ -16,7 +16,7 @@ import Footer from "../components/Footer";
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['footer', 'home']))
+      ...(await serverSideTranslations(locale, ['home', 'footer']))
     }
   }
 }
@@ -47,7 +47,7 @@ export default function Home() {
           <Navbar t={t} />
           <Header t={t} />
           <HomePage t={t} />
-          <Footer />
+          <Footer t={t} />
         </div>
       )}
     </div>
