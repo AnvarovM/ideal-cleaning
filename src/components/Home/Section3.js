@@ -33,7 +33,7 @@ const Section3 = ({ t }) => {
               onClick={() => router.push("/contact")}
               className="main--btn mb-6"
             >
-              To'liq o'qish
+              {t("home:read_more")}
             </button>
           </div>
           <div className="price-card">
@@ -52,7 +52,7 @@ const Section3 = ({ t }) => {
               onClick={() => router.push("/contact")}
               className="main--btn mb-6"
             >
-              To'liq o'qish
+              {t("home:read_more")}
             </button>
           </div>
           <div className="price-card">
@@ -71,7 +71,7 @@ const Section3 = ({ t }) => {
               onClick={() => router.push("/contact")}
               className="main--btn mb-6"
             >
-              To'liq o'qish
+              {t("home:read_more")}
             </button>
           </div>
         </div>
@@ -101,39 +101,35 @@ const Section3 = ({ t }) => {
           </div>
           {/* right reason */}
           <div>
-            {/* <h4 className="text-2xl font-medium text-skin-base">Biz bunga bir nechta sabab keltira olamiz!</h4> */}
             <p className="organic-items-p">
               {" "}
               <span className="text-green-500 mr-2">
                 <ImLeaf />
               </span>{" "}
-              100% xavfsiz va tabiiy!{" "}
+              {t("home:natural_product_strong1")}
             </p>
             <p className="font-medium text-sm text-skin-muted dark:text-skin-dark_text">
-              Biz mijozlarimizni qondirish va ularning obligatsiya pullarini
-              qaytarish bo'yicha muvaffaqiyatli tajribaga egamiz.{" "}
-            </p>
-            <p className="organic-items-p">
-              {" "}
-              <span className="text-green-500 mr-2">
-                <ImLeaf />
-              </span>{" "}
-              100% xavfsiz va tabiiy!{" "}
-            </p>
-            <p className="font-medium text-sm text-skin-muted dark:text-skin-dark_text">
-              Biz mijozlarimizni qondirish va ularning obligatsiya pullarini
-              qaytarish bo'yicha muvaffaqiyatli tajribaga egamiz.{" "}
+              {t("home:natural_product_p1")}
             </p>
             <p className="organic-items-p">
               {" "}
               <span className="text-green-500 mr-2">
                 <ImLeaf />
               </span>{" "}
-              100% xavfsiz va tabiiy!{" "}
+              {t("home:natural_product_strong2")}
             </p>
             <p className="font-medium text-sm text-skin-muted dark:text-skin-dark_text">
-              Biz mijozlarimizni qondirish va ularning obligatsiya pullarini
-              qaytarish bo'yicha muvaffaqiyatli tajribaga egamiz.{" "}
+              {t("home:natural_product_p2")}
+            </p>
+            <p className="organic-items-p">
+              {" "}
+              <span className="text-green-500 mr-2">
+                <ImLeaf />
+              </span>{" "}
+              {t("home:natural_product_strong3")}
+            </p>
+            <p className="font-medium text-sm text-skin-muted dark:text-skin-dark_text">
+              {t("home:natural_product_p3")}
             </p>
           </div>
         </div>

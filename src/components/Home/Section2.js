@@ -55,33 +55,30 @@ const Section2 = ({ t }) => {
               <span className="text-green-500 mr-2">
                 <ImLeaf />
               </span>{" "}
-              Yuqor darajali hizmat!{" "}
+              {t("home:why_chose_us_strong1")}
             </p>
             <p className="font-medium text-sm text-skin-muted  dark:text-skin-dark_text">
-              Biz mijozlarimizni qondirish va ularning obligatsiya pullarini
-              qaytarish bo'yicha muvaffaqiyatli tajribaga egamiz.{" "}
+            {t("home:why_chose_us_p1")}
             </p>
             <p className="reason-p">
               {" "}
               <span className="text-green-500 mr-2">
                 <ImLeaf />
               </span>{" "}
-              Yuqor darajali hizmat!{" "}
+              {t("home:why_chose_us_strong1")}
             </p>
             <p className="font-medium text-sm text-skin-muted  dark:text-skin-dark_text">
-              Biz mijozlarimizni qondirish va ularning obligatsiya pullarini
-              qaytarish bo'yicha muvaffaqiyatli tajribaga egamiz.{" "}
+            {t("home:why_chose_us_p1")}
             </p>
             <p className="reason-p">
               {" "}
               <span className="text-green-500 mr-2">
                 <ImLeaf />
               </span>{" "}
-              Yuqor darajali hizmat!{" "}
+              {t("home:why_chose_us_strong1")}
             </p>
             <p className="font-medium text-sm text-skin-muted  dark:text-skin-dark_text">
-              Biz mijozlarimizni qondirish va ularning obligatsiya pullarini
-              qaytarish bo'yicha muvaffaqiyatli tajribaga egamiz.{" "}
+            {t("home:why_chose_us_p1")}
             </p>
           </div>
         </div>

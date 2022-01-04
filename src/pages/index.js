@@ -16,13 +16,12 @@ import Footer from "../components/Footer";
 export async function getStaticProps({ locale }) {
   return {
     props: {
-      ...(await serverSideTranslations(locale, ['home']))
+      ...(await serverSideTranslations(locale, ['footer', 'home']))
     }
   }
 }
 
-
-export default function Home(props) {
+export default function Home() {
   const [loading, setLoading] = useState(false);
   const { t } = useTranslation();
 
@@ -45,7 +44,7 @@ export default function Home(props) {
         <Loader />
       ) : (
         <div className="dark:bg-skin-dark_secondary_bg">
-          <Navbar />
+          <Navbar t={t} />
           <Header t={t} />
           <HomePage t={t} />
           <Footer />

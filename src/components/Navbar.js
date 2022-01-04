@@ -31,14 +31,6 @@ import { signIn, signOut, useSession } from "next-auth/client";
 import Sidebar from "./Sidebar";
 import ToTop from "./ToTop";
 
-export async function getStaticProps({ locale }) {
-  return {
-    props: {
-      ...(await serverSideTranslations(locale, ["home"])),
-    },
-  };
-}
-
 const Navbar = () => {
   const [openUser, setOpenUser] = useState(false);
   const [openLanguage, setOpenLanguage] = useState(false);

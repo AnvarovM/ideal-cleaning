@@ -249,21 +249,11 @@ const Section1 = ({ t }) => {
             </h3>
 
             <p className="text-skin-muted dark:text-skin-dark_text text-sm lg:text-white lg:text-base font-medium">
-              Ham samarali, ham sifatli xizmatni qidiryapsizmi? Ishchilarimiz
-              siz qidirayotgan narsa bo'lishi mumkin. Kompaniya juda tartibli:
-              uyingizga kelgan har bir hizmatchi guruhiga nazoratchi vazifasini
-              bajaradigan guruh rahbari kiradi.
+               {t("home:year_experience_p1")}
             </p>
 
             <p className="text-skin-muted dark:text-skin-dark_text text-sm lg:text-white lg:text-base font-medium">
-              Tozalash vaqtida dala menejeri vaqti-vaqti bilan tozalanganligini
-              tekshirish uchun hozir bo'ladi. Xizmat 100% kafolatlangan va
-              ko'pchilik o'z ishlaridan juda mamnun. Ammo yodda tutish kerak
-              bo'lgan bir narsa: Ba'zi bir oldingi foydalanuvchilar uyingizni
-              tozalashning boshlang'ich narxini kam baholaganidan shikoyat
-              qilishgan, shuning uchun siz haqiqatga yaqin bo'lish uchun
-              ularning hisobiga yana yuz yoki undan ko'proq pul qo'shishingiz
-              mumkin.
+               {t("home:year_experience_p2")}
             </p>
 
             <button

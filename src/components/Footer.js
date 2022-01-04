@@ -5,18 +5,20 @@ import { LocationMarkerIcon, PhoneIcon, ChatIcon} from '@heroicons/react/solid'
 
 // next.js
 import Link from 'next/link'
-import {useRouter} from 'next/router'
+import { useRouter } from 'next/router'
+import { useTranslation } from "next-i18next";
 
 const Footer = () => {
     const router = useRouter()
-    const [searchInput, setSearchInput] = React.useState("")
-    console.log(setSearchInput);
+    const [searchInput, setSearchInput] = React.useState("");
+    const { t } = useTranslation();
+
     return (
         <footer className="bg-[#e5e7eb] dark:bg-skin-dark_main_bg py-5">
             <div className="max-w-6xl mx-auto px-10 lg:px-0">
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
                    <div>
-                    <h2 className="py-6 text-xl font-medium text-skin-base dark:text-skin-dark_text_muted uppercase">Aloqaga Chiqish</h2>
+                    <h2 className="py-6 text-xl font-medium text-skin-base dark:text-skin-dark_text_muted uppercase">{t("footer:get_in_touch_heading")}</h2>
                      <div className="space-y-2">
                             <p className="footer-link"><LocationMarkerIcon className="h-5 text-skin-muted pr-2" /> 123 Street, New York, USA </p>
                             <p className="footer-link"><PhoneIcon className="h-5 text-skin-muted pr-2" /> +012 345 67890 </p>

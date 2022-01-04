@@ -10,7 +10,7 @@ import { gsap, TweenMax, Power3 } from "gsap";
 // import Navbar from "./Navbar";
 import { useRouter } from "next/router";
 
-const Header = (props) => {
+const Header = ({t}) => {
   const router = useRouter();
   let heading = useRef(null);
   const settings = {
@@ -49,13 +49,13 @@ const Header = (props) => {
             <div className="carousel--content-div">
             <div className="carousel-bg-opacity" />
               <h1 ref={(el) => (heading = el)} className="carousel--content-h1">
-              {props.t("home:header_slider1")}
+              {t("home:header_slider1")}
               </h1>
               <button
                 onClick={() => router.push("/contact")}
                 className="carousel--content-btn"
               >
-                {props.t("home:header_aloqa_btn")}
+                {t("home:header_aloqa_btn")}
               </button>
             </div>
           </div>
@@ -73,13 +73,13 @@ const Header = (props) => {
             />
             <div className="carousel--content-div">
               <h1 ref={(el) => (heading = el)} className="carousel--content-h1">
-                {props.t("home:header_slider2")}
+                {t("home:header_slider2")}
               </h1>
               <button
                 onClick={() => router.push("/contact")}
                 className="carousel--content-btn"
               >
-                {props.t("home:header_aloqa_btn")}
+                {t("home:header_aloqa_btn")}
               </button>
             </div>
           </div>
@@ -97,13 +97,13 @@ const Header = (props) => {
             />
             <div className="carousel--content-div">
               <h1 ref={(el) => (heading = el)} className="carousel--content-h1">
-              {props.t("home:header_slider3")}
+              {t("home:header_slider3")}
               </h1>
               <button
                 onClick={() => router.push("/contact")}
                 className="carousel--content-btn"
               >
-                {props.t("home:header_aloqa_btn")}
+                {t("home:header_aloqa_btn")}
               </button>
             </div>
           </div>
